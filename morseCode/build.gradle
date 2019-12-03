@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+    id 'idea'	 // optional, for IntelliJ IDEA project
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
+    implementation 'junit:junit:4.12'
+}
+test {
+    useJUnitPlatform()
+}
